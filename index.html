@@ -6,11 +6,33 @@
   </head>
   <body>
     <h1>Hello World!</h1>
+    <h1>Hello World!</h1>
+   <span>wwo</span>
+   <span>
+     djasjkajk
+   </span>
+   <span  class="caret"> </span>
     We are using Node.js <span id="node-version"></span>,
     Chromium <span id="chrome-version"></span>,
     and Electron <span id="electron-version"></span>.
 
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
+    <script>
+    require('electron-connect').client.create();
+    </script>
+    <style>
+      .caret {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: 2px;
+        vertical-align: middle;
+        border-top: 4px solid;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+      }
+    </style>
   </body>
 </html>
+
